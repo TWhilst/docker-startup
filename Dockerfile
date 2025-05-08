@@ -18,7 +18,7 @@ RUN npm run build
 FROM nginx:1.17.10-alpine
 
 # This is the particular port where the docker container will be listening on
-EXPOSE 4200
+EXPOSE 80
 
 # THis basically copies the result of the node container and paste it in the nginx html folder
 COPY --from=build /app/dist/angularCalc /usr/share/nginx/html
