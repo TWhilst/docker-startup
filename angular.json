@@ -16,7 +16,7 @@
             "outputPath": "dist/angularCalc",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": ["zone.js"],
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
@@ -57,11 +57,11 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angularCalc:build"
+            "buildTarget": "angularCalc:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angularCalc:build:production"
+              "buildTarget": "angularCalc:build:production"
             }
           }
         },
@@ -75,7 +75,7 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": ["zone.js"],
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
@@ -131,7 +131,6 @@
       }
     }
   },
-  "defaultProject": "angularCalc",
   "cli": {
     "analytics": "627a4e2c-a52d-4ed0-a49a-1e2f0cb0e4e6"
   }
