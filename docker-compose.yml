@@ -3,10 +3,10 @@ version: '3.8'
 services:
   frontend:
     build: ./frontend
-    container_name: quote_frontend
+    container_name: t_frontend
   backend:
     build: ./backend
-    container_name: quote_backend
+    container_name: t_backend
     expose:
       - "5000"
   nginx:
