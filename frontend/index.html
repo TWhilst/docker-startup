@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QuoteStack</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        .quote-box { margin: 20px auto; padding: 30px; width: 50%; border: 1px solid #ccc; border-radius: 10px; }
+        button { padding: 10px 20px; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <h1>🎬 QuoteStack 🎬</h1>
+    <div class="quote-box" id="quote-box">Click below to get a random movie quote!</div>
+    <button onclick="getQuote()">Get Quote</button>
+    <script>
+        function getQuote() {
+            fetch('/api/quote')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('quote-box').innerText = `"${data.quote}"`;
+                });
+        }
+    </script>
+</body>
+</html>
