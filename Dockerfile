@@ -1,4 +1,4 @@
-FROM maven:eclipse-temurin-11-alpine as build
+FROM maven:3.9.9-eclipse-temurin-11-alpine as build
 
 COPY . /app
 
