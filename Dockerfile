@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jdk-alpine as build
+FROM maven:eclipse-temurin-11-alpine as build
 
 COPY . /app
 
