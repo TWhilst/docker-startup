@@ -12,4 +12,4 @@ FROM nginx:1.17.10-alpine
 EXPOSE 80
 
 # THis basically copies the result of the node container and paste it in the nginx html folder
-COPY --from=build /app/target/*.war /usr/share/nginx/html
+COPY --from=build /app/target/WebAppCal-0.0.6.war /usr/share/nginx/html
