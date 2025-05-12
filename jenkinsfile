@@ -27,7 +27,9 @@ pipeline {
         }
 
         stage ('Run Sonarqube on Docker') {
-            sh 'docker container run --name sonarqube-t -dt -p 9000:9000 sonarqube:latest'
+            steps{
+                sh 'docker container run --name sonarqube-t -dt -p 9000:9000 sonarqube:latest'
+            }
         }
 
         stage('Sonarqube integration') {
