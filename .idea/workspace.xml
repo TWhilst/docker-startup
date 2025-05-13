@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed93b8e7-a557-4f93-8f76-cc3f92898a5e" name="Changes" comment="made changes to jenkinsfile" />
+    <list default="true" id="ed93b8e7-a557-4f93-8f76-cc3f92898a5e" name="Changes" comment="made changes to files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +58,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Toche\StudioProjects\docker-startup" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Toche\StudioProjects\docker-startup" />
       <recent name="C:\Users\Toche\StudioProjects\docker-startup\src" />
